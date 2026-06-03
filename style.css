@@ -83,6 +83,11 @@ a:focus {
   margin-bottom: 18px;
 }
 
+.empty-state {
+  color: #444;
+  font-style: italic;
+}
+
 .meta {
   color: #555;
   font-size: 15px;

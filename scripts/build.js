@@ -291,6 +291,12 @@ const postList = posts
   })
   .join("\n");
 
+const writingBody = posts.length
+  ? `<ul class="post-list">
+${postList}
+      </ul>`
+  : `<p class="empty-state">Starting fresh from June 3, 2026. I may backfill older pieces later.</p>`;
+
 const homeBody = `
     <section class="intro">
       <img class="portrait" src="/assets/travis-gerrard.jpg" alt="Travis Gerrard">
@@ -300,9 +306,7 @@ const homeBody = `
 
     <section id="writing">
       <h2>Writing</h2>
-      <ul class="post-list">
-${postList}
-      </ul>
+      ${writingBody}
     </section>
 
     <section id="why-transcripts" class="note">
