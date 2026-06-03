@@ -233,16 +233,6 @@ function writePage(relativePath, html) {
   fs.writeFileSync(fullPath, html);
 }
 
-function copyAsset() {
-  const source = path.resolve(root, "../resume/images/travis-gerrard-portrait.jpg");
-  const dest = path.join(root, "assets/travis-gerrard.jpg");
-  if (fs.existsSync(source)) {
-    fs.copyFileSync(source, dest);
-  }
-}
-
-copyAsset();
-
 const posts = config.posts.map((entry) => {
   const article = parseMarkdownFile(entry.article);
   const dictations = (entry.dictations || []).map(parseMarkdownFile);
@@ -299,9 +289,8 @@ ${postList}
 
 const homeBody = `
     <section class="intro">
-      <img class="portrait" src="/assets/travis-gerrard.jpg" alt="Travis Gerrard">
-      <p>This is my personal site for writing outside my professional CV.</p>
-      <p>I plan to post essays and notes here. When a piece starts as a dictated draft, I may include the original transcript next to the edited version.</p>
+      <img class="intro-photo" src="/assets/travis-gerrard.jpg" alt="Travis Gerrard at an art museum">
+      <p>A personal space.</p>
     </section>
 
     <section id="writing">

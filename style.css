@@ -58,12 +58,13 @@ a:focus {
   overflow: auto;
 }
 
-.portrait {
+.intro-photo {
   border: 1px solid #bbb;
   float: right;
   height: auto;
   margin: 0 0 14px 22px;
-  max-width: 120px;
+  max-width: 330px;
+  width: 43%;
 }
 
 .note {
@@ -155,9 +156,10 @@ code {
     padding-top: 22px;
   }
 
-  .portrait {
+  .intro-photo {
     float: none;
     margin: 6px 0 16px;
-    max-width: 96px;
+    max-width: 100%;
+    width: 100%;
   }
 }
