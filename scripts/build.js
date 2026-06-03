@@ -214,7 +214,7 @@ function page(title, body, extraClass = "") {
         <a href="/">home</a>
         <a href="/#writing">writing</a>
         <a href="/#why-transcripts">why transcripts?</a>
-        <a href="https://travisgerardmd.com">professional page</a>
+        <a href="https://travisgerrardmd.com">professional page</a>
       </nav>
     </header>
 ${body}
