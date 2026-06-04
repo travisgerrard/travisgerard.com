@@ -1,4 +1,11 @@
 {
   "sourceRoot": "../life/Writing",
-  "posts": []
+  "posts": [
+    {
+      "article": "Articles/2026-06-03_The-Physical-Exam.md",
+      "dictations": [
+        "Dictations/2026-06-03_The-Physical-Exam_Raw-Transcript.md"
+      ]
+    }
+  ]
 }
