@@ -2,6 +2,12 @@
   "sourceRoot": "../life/Writing",
   "posts": [
     {
+      "article": "Articles/2026-07-15_The-Running-Note.md",
+      "dictations": [
+        "Dictations/2026-07-15_The-Running-Note_Raw-Transcript.md"
+      ]
+    },
+    {
       "article": "Articles/2026-06-17_Everything-Technology.md",
       "dictations": [
         "Dictations/2026-06-17_Everything-Technology_Raw-Transcript.md"
