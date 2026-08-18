@@ -213,6 +213,7 @@ function page(title, body, extraClass = "") {
       <nav class="nav">
         <a href="/">home</a>
         <a href="/#writing">writing</a>
+        <a href="/#travel">travel</a>
         <a href="/#why-transcripts">why transcripts?</a>
         <a href="https://travisgerrardmd.com">professional page</a>
       </nav>
@@ -287,6 +288,21 @@ ${postList}
       </ul>`
   : `<p class="empty-state">Starting fresh from June 3, 2026. I may backfill older pieces later.</p>`;
 
+const travelEntries = config.travel || [];
+const travelBody = travelEntries.length
+  ? `<ul class="post-list">
+${travelEntries
+  .map(
+    (entry) => `<li>
+      <a href="${escapeHtml(entry.url)}">${escapeHtml(entry.title)}</a>
+      <p class="meta">${escapeHtml(entry.date || "")}</p>
+      ${entry.description ? `<p>${escapeHtml(entry.description)}</p>` : ""}
+    </li>`,
+  )
+  .join("\n")}
+      </ul>`
+  : `<p class="empty-state">More journeys to come.</p>`;
+
 const homeBody = `
     <section class="intro">
       <img class="intro-photo" src="/assets/travis-gerrard.jpg" alt="Travis Gerrard at an art museum">
@@ -296,6 +312,11 @@ const homeBody = `
     <section id="writing">
       <h2>Writing</h2>
       ${writingBody}
+    </section>
+
+    <section id="travel">
+      <h2>Travel</h2>
+      ${travelBody}
     </section>
 
     <section id="why-transcripts" class="note">
