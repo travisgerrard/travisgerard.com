@@ -150,7 +150,7 @@ h1 { max-width: 8ch; font-size: clamp(4rem, 8vw, 8.6rem); }
   line-height: .72;
 }
 
-.photo-grid, .wide-photo {
+.photo-grid, .wide-photo, .portrait-feature {
   width: min(92vw, 80rem);
   margin: clamp(3rem, 7vw, 6rem) auto;
 }
@@ -160,6 +160,8 @@ h1 { max-width: 8ch; font-size: clamp(4rem, 8vw, 8.6rem); }
 .photo-grid img, .wide-photo img { width: 100%; border-radius: 1px; }
 .portrait-pair { max-width: 62rem; }
 .wide-photo { max-width: 67rem; }
+.portrait-feature { max-width: 42rem; }
+.portrait-feature img { width: 100%; }
 
 .closing {
   display: grid;
@@ -188,8 +190,8 @@ h1 { max-width: 8ch; font-size: clamp(4rem, 8vw, 8.6rem); }
   .ledger div:last-child { grid-column: 1 / -1; border-right: 1px solid var(--line); }
   .day-header { grid-template-columns: 1fr; gap: 1.25rem; }
   .photo-grid.two, .photo-grid.three { grid-template-columns: 1fr; }
-  .photo-grid, .wide-photo, .field-note { width: calc(100% + 2.5rem); margin-left: -1.25rem; }
-  .photo-grid figcaption, .wide-photo figcaption, .field-note figcaption { padding-inline: 1.25rem; }
+  .photo-grid, .wide-photo, .field-note, .portrait-feature { width: calc(100% + 2.5rem); margin-left: -1.25rem; }
+  .photo-grid figcaption, .wide-photo figcaption, .field-note figcaption, .portrait-feature figcaption { padding-inline: 1.25rem; }
 }
 
 @media print {
@@ -206,7 +208,7 @@ h1 { max-width: 8ch; font-size: clamp(4rem, 8vw, 8.6rem); }
   .ledger { padding: .35in 0; }
   .ledger div { min-height: 0; }
   .ledger strong { font-size: 24pt; }
-  .field-note, .photo-grid, .wide-photo { width: 100%; margin: .28in auto; }
+  .field-note, .photo-grid, .wide-photo, .portrait-feature { width: 100%; margin: .28in auto; }
   .field-note img { max-height: 6.8in; object-fit: contain; }
   .day { padding: .45in 0 0; }
   .day + .day { break-before: page; }
@@ -215,7 +217,7 @@ h1 { max-width: 8ch; font-size: clamp(4rem, 8vw, 8.6rem); }
   .day-number { font-size: 26pt; }
   .prose > p { max-width: 6.5in; font-size: 10.5pt; line-height: 1.5; margin-bottom: .14in; }
   figure, .photo-grid { break-inside: avoid; }
-  .photo-grid img, .wide-photo img { max-height: 4.35in; object-fit: contain; }
+  .photo-grid img, .wide-photo img, .portrait-feature img { max-height: 6.4in; object-fit: contain; }
   figcaption { color: #444; font-size: 7.5pt; }
   .closing { min-height: 0; padding: .5in 0; background: #fff; color: #111; border-top: 1px solid #777; }
   .closing p:not(.kicker) { font-size: 22pt; }
