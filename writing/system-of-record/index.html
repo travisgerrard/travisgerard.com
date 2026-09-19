@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>System of Record | Travis Gerrard</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="page article-page">
+    <header class="site-header">
+      <h1><a href="/">Travis Gerrard</a></h1>
+      <p>Writing, notes, and source transcripts.</p>
+      <nav class="nav">
+        <a href="/">home</a>
+        <a href="/#writing">writing</a>
+        <a href="/#travel">travel</a>
+        <a href="/#why-transcripts">why transcripts?</a>
+        <a href="https://travisgerrardmd.com">professional page</a>
+      </nav>
+    </header>
+
+    <article class="article">
+      <h1>System of Record</h1>
+      <p class="meta">2026-09-19</p>
+      
+      <p>For most of my career, the electronic medical record has been a monolith. From the perspective of a primary care doctor, the same system stores the medical record, takes information in, and gives information back out. If I want to document a visit, I use the EMR. If I want to figure out why someone is taking a medication or what happened to their kidney function over the last five years, I use the EMR.</p>
+<p>Earlier this year I spent a lot of time thinking that what medicine needed was something more like a command line. Instead of clicking through menus, I wanted to be able to tell the computer what I wanted. I still think that was directionally right, but I now think I was focused on the wrong layer. What we need is not necessarily an EMR with a better interface. We may need to separate the interface from the system of record entirely.</p>
+<p>The system of record itself is incredibly valuable. In some ways, that may be Epic’s greatest asset. Epic is everywhere. It contains years or decades of longitudinal medical information on enormous numbers of people, and health systems have built their operations around it. Being the trusted medical ledger is an extraordinary position to occupy. Access to that ledger is valuable, and I do not think there is anything inherently wrong with charging for access to it.</p>
+<p>Historically, though, owning the ledger also meant owning the ways information went into and came out of it. That made sense when software had to provide every screen, checkbox, search box, and workflow itself. AI changes that assumption.</p>
+<p>On the input side, I increasingly think the physician becomes a verification layer to the real world. The AI listens to the visit, extracts the relevant information, proposes documentation, orders, and reminders, and puts information where it belongs. My job becomes more about saying yes, that is right; no, change this; you misunderstood that. We probably do not need nearly as many clicks to create an accurate record. The post-visit work starts to look more like editing an essay than writing one from scratch.</p>
+<p>The output side may change even more. I should not have to understand the organizational logic of a database and the UI that overlays it to understand the patient in front of me. I should be able to ask what changed since the last visit, why a medication was started, or what important issues remain unresolved. The intelligence layer can figure out where those answers live.</p>
+<p>There is another reason I do not think the EMR company should try to own that entire intelligence layer. There is no single ideal model. Personally, I have surprisingly strong preferences about how models behave. I want one to write a particular way. I want to be able to correct it when it does not sound appropriate. I may want a different level of detail, a different approach to uncertainty, or a different way of organizing information than another physician does. Models can be tuned, instructed, swapped out, and combined. Trying to impose one monolithic AI on every physician seems like recreating the problem we already have with the monolithic EMR. A few settings and knobs are unlikely to capture how differently individual physicians want these systems to behave.</p>
+<p>This is where the “let a thousand flowers bloom” idea becomes important. Keep the trusted system of record. Protect it aggressively. Medicine has a substantial privacy layer, mostly for good reason, and any system touching patient information needs authentication, permissions, auditing, and clear rules about where that information can go. But within those boundaries, let different intelligence layers compete to become the best way to put information in and get information out.</p>
+<p>And this is no longer particularly hypothetical. We are already seeing outside AI systems connect to major EHRs and begin to act as another layer between the clinician and the record. That matters because it suggests the intelligence layer and the system of record are becoming separable products. The important question may no longer be whether the EMR vendor can build the best interface. It may be whether it can expose the underlying record in a way that complies with the law while still serving the people the system exists for: patients trying to live healthier lives and physicians trying to practice the best medicine they can with the tools available.</p>
+<p>That seems like the strategic question for Epic and every other large EMR company. If the underlying record is your moat, how much of everything surrounding it do you really need to own?</p>
+<p>Likely there is a temptation to protect the existing bundle because the bundle is profitable (I assume). But the intelligence layers are getting good very quickly. If clinicians discover that an outside system can understand their patients, retrieve what they need, write the way they want, and eliminate a large fraction of the mechanical interaction with the EMR, they are going to want it badly.</p>
+<p>I know I would.</p>
+<p>There is also a part of this that I am going to get to watch play out in real time. My own health system is preparing to deploy Abridge, an ambient documentation system. I am excited to see what happens when this moves from something I think about while riding my bike to something I actually use in clinic. Ambient documentation is still mostly an input-layer change, but it is a meaningful one. For the first time, I may be able to spend substantially less effort manually constructing the record while still leaving behind a useful system of record. Once I see how well the input layer starts to work, I suspect the next question becomes much more obvious. If I no longer depend so much on the EMR interface to put information in, why should I need it to get information back out?</p>
+<p>Perhaps the future EMR is not a better monolith. Perhaps it is a very valuable, very secure system of record with increasingly permeable boundaries around it. The medical ledger remains. The interfaces multiply. The models compete. And the most important strategic decision for the companies that own the record may be figuring out how to let that happen without giving away the thing that was valuable all along.</p>
+    </article>
+  
+    <footer class="footer">
+      <p>Plain HTML, blue links, and receipts where available.</p>
+    </footer>
+  </main>
+</body>
+</html>
