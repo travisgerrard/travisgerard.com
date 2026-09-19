@@ -3,7 +3,9 @@
   "posts": [
     {
       "article": "Articles/2026-09-19_System-of-Record.md",
-      "dictations": []
+      "dictations": [
+        "Dictations/2026-09-19_System-of-Record_Raw-Transcript.md"
+      ]
     },
     {
       "article": "Articles/2026-09-06_Whats-Left-for-Me.md",
